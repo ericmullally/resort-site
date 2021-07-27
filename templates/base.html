@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "base.css" %}">
+     {% block css%} {% endblock %}
+</head>
+
+<body>
+    <header id="header">
+        <div>
+            <img class="logo-img" src="" alt="logo" />
+            <h1>Hanalucka Resorts</h1>
+        </div>
+        <input type="text" name="search" placeholder="Search" />
+    </header>
+
+    {% block body %} {% endblock %}
+
+    <footer id="footer">
+        <img src="" alt="logo">
+        <p>@copywrite</p>
+    </footer>
+</body>
+
+</html>

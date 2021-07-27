@@ -1,0 +1,56 @@
+:root {
+    --primary: 3, 76, 171;
+    --secondary: 0, 135, 101;
+    --terciary: 101, 106, 137;
+    --shadow: rgb(0 0 0 / 50%) -2px 3px 3px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0 8vw 0 8vw;
+    background-color: rgba(128, 128, 128, 0.63);
+}
+
+p {
+    font-size: 1.03vw;
+}
+
+h3 {
+    font-size: 1.1vw;
+    letter-spacing: 1px;
+}
+
+#header {
+    margin-left: -8vw;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    bottom: 5vw;
+    background-color: rgb(var(--primary));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header input {
+    min-height: 1.8vw;
+    padding: 0.3vw;
+    margin-right: 1vw;
+}
+
+#header div {
+    min-height: 1.8vw;
+    padding: 0.3vw;
+    margin-left: 1vw;
+}
+
+#footer {}

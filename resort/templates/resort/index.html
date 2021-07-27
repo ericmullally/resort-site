@@ -1,0 +1,20 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+{% block title %} Resort Booking {% endblock %} 
+
+{%block css%}
+<link rel="stylesheet" href="{% static 'resort/resort.css'%}">
+{% endblock %} 
+ 
+ {% block body%} 
+ 
+ <section id="amenities-section">
+    {% include "resort/includes/activities-card.html" %}
+    
+ </section>
+    
+ <section id ="reviews">
+ <h2>reviews</h2>
+ </section>
+ {% endblock %}

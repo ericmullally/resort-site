@@ -1,20 +1,31 @@
-{% extends 'base.html' %} 
-{% load static %} 
+{% extends 'base.html' %}
+{% load static %}
 
-{% block title %} Resort Booking {% endblock %} 
+{% block title %}Hanalucka Resorts {% endblock %}
 
 {%block css%}
 <link rel="stylesheet" href="{% static 'resort/resort.css'%}">
-{% endblock %} 
- 
- {% block body%} 
- 
- <section id="amenities-section">
-    {% include "resort/includes/activities-card.html" %}
-    
- </section>
-    
- <section id ="reviews">
- <h2>reviews</h2>
- </section>
+{% endblock %}
+
+ {% block body%}
+
+<section id="hero">
+    <div class="cover"></div>
+</section>
+
+<section id="amenities-section">
+
+    <h2> Experiences </h2>
+    <ul>
+        {% include "resort/includes/activities-card.html" %}
+        {% include "resort/includes/activities-card.html" %}
+        {% include "resort/includes/activities-card.html" %}
+        {% include "resort/includes/activities-card.html" %}
+    </ul>
+
+</section>
+
+<section id="reviews">
+    <h2>reviews</h2>
+</section>
  {% endblock %}

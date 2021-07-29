@@ -5,6 +5,8 @@
 
 {%block css%}
 <link rel="stylesheet" href="{% static 'resort/resort.css'%}">
+<link rel="stylesheet" href="{% static 'resort/card.css'%}">
+
 {% endblock %}
 
  {% block body%}
@@ -13,16 +15,22 @@
     <div class="cover"></div>
 </section>
 
-<section id="amenities-section">
+<section id="welcome">
 
+</section>
+
+<section id="amenities-section">
+<div class="cover-amenities">
     <h2> Experiences </h2>
     <ul>
         {% include "resort/includes/activities-card.html" %}
         {% include "resort/includes/activities-card.html" %}
         {% include "resort/includes/activities-card.html" %}
         {% include "resort/includes/activities-card.html" %}
+        {% include "resort/includes/activities-card.html" %}
+        {% include "resort/includes/activities-card.html" %}
     </ul>
-
+</div>
 </section>
 
 <section id="reviews">

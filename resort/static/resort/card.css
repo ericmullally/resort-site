@@ -1,0 +1,58 @@
+.amenities-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    width: 100%;
+    height: 80%;
+    background-color: rgba(var(--primary), 1);
+    overflow: hidden;
+    transition: all, .5s;
+    cursor: pointer;
+}
+
+.amenities-card img {
+    position: relative;
+    z-index: 0;
+    vertical-align: bottom;
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: all, ease, .5s;
+}
+
+.amenities-card:hover>img {
+    transform: scale(101%);
+    backface-visibility: hidden;
+}
+
+.amenities-card h3 {
+    margin-top: -16%;
+    position: relative;
+    z-index: 1;
+    width: 59%;
+    background-color: rgba(var(--secondary), 1);
+}
+
+.amenities-card p {
+    color: rgba(var(--text-secondary), 1);
+}
+
+.detail-btn {
+    background-color: rgb(var(--secondary));
+    padding: 5px;
+    border-radius: 3px;
+    color: rgb(var(--text-primary));
+    border-width: 1px;
+    width: 30%;
+    height: min-content;
+    transform: translate(0, 120%);
+    align-self: center;
+    transition: all, ease, .5s;
+}
+
+.amenities-card:hover>.detail-btn {
+    transform: translate(0, -30%);
+}

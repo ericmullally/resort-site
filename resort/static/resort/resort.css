@@ -1,3 +1,4 @@
+
 /****************************************************** Hero section ***********************************************************************/
 
 #hero {
@@ -41,7 +42,7 @@
 }
 
 .cover,
-.cover-amenities {
+.cover-activities {
     position: relative;
     width: 100%;
     height: 100%;
@@ -74,9 +75,9 @@
 }
 
 
-/****************************************************** Amenities section ***********************************************************************/
+/****************************************************** Activities section ***********************************************************************/
 
-#amenities-section {
+#activities-section {
     margin-top: 5vw;
     width: 100%;
     height: max-content;
@@ -87,14 +88,14 @@
     box-shadow: var(--shadow);
 }
 
-.cover-amenities {
+.cover-activities {
     background-color: rgba(var(--primary), .5);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#amenities-section ul {
+#activities-section ul {
     display: grid;
     margin-top: 2vw;
     width: 75%;
@@ -106,7 +107,7 @@
     justify-items: center;
 }
 
-#amenities-section h2 {
+#activities-section h2 {
     background-color: rgba(var(--primary), 1);
     padding: 1vw;
     align-self: stretch;

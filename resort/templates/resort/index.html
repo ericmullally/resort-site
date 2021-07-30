@@ -24,16 +24,13 @@
 <p>{% lorem 100 w random %}</p>
 </section>
 
-<section id="amenities-section">
-<div class="cover-amenities">
+<section id="activities-section">
+<div class="cover-activities">
     <h2> Experiences </h2>
     <ul>
+        {% for activities in data %}
         {% include "resort/includes/activities-card.html" %}
-        {% include "resort/includes/activities-card.html" %}
-        {% include "resort/includes/activities-card.html" %}
-        {% include "resort/includes/activities-card.html" %}
-        {% include "resort/includes/activities-card.html" %}
-        {% include "resort/includes/activities-card.html" %}
+        {% endfor %}
     </ul>
 </div>
 </section>

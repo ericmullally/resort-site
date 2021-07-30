@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\resort",
-    "\\static"
+    "\\resort\\static\\resort\\photos"
   ],
-  "SelectedNode": "\\static\\base.css",
+  "SelectedNode": "\\templates",
   "PreviewInSolutionExplorer": false
 }

@@ -1,9 +1,9 @@
 :root {
-    --background-primary: 100, 100, 100;
+    --background-primary: 185, 185, 185;
     --text-primary: 187, 172, 17;
     --text-secondary: 200, 200, 200;
     --primary: 0, 0, 48;
-    --secondary: 63, 64, 87;
+    --secondary: 3, 3, 131;
     --shadow: rgb(0 0 0 / 50%) -2px 3px 3px;
 }
 
@@ -18,12 +18,13 @@ html {
 }
 
 body {
-    margin: 0 8vw 0 8vw;
+    margin: 0 8vw 0 7vw;
     background-color: rgb(var(--background-primary));
 }
 
 p {
     font-size: 1.03vw;
+    color: rgb(var(--text-secondary));
 }
 
 h1 {
@@ -44,6 +45,9 @@ h3 {
     letter-spacing: 1px;
     color: rgba(var(--text-primary), 1)
 }
+
+
+/****************************************************** Header section ***********************************************************************/
 
 #header {
     margin-left: -8vw;
@@ -77,8 +81,57 @@ h3 {
 }
 
 #header svg {
-    height: 5vw;
+    height: 4vw;
     width: 16vw;
 }
 
-#footer {}
+
+/****************************************************** Footer section ***********************************************************************/
+
+#footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    box-shadow: var(--shadow);
+    margin-top: 5vw;
+}
+
+#footer ul {
+    color: rgb(var(--text-secondary));
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 10vw;
+    height: 10vw;
+    margin-bottom: 1vw;
+}
+
+#footer li {
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+#footer li:hover {
+    transform: translate(0, -2px);
+}
+
+#footer img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+#footer img:hover {
+    transform: translate(0, -2px);
+}
+
+#footer div {
+    margin: 2vw;
+}

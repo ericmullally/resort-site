@@ -1,3 +1,5 @@
+/****************************************************** Hero section ***********************************************************************/
+
 #hero {
     background-image: url(./photos/main_sceen.jpg);
     background-position: center;
@@ -7,17 +9,35 @@
     height: 32vw;
     margin-top: 1px;
     border-radius: 5px;
+    box-shadow: var(--shadow);
 }
 
 .cover {
     background-color: rgba(var(--primary), .2);
+    overflow: hidden;
 }
 
-.cover-amenities {
-    background-color: rgba(var(--primary), .5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cover h1 {
+    font-size: 3vw;
+    background-color: rgba(var(--primary), .3);
+    width: 70%;
+    position: relative;
+    top: 50%;
+    right: -29%;
+    padding: 5px;
+    border-left-style: solid;
+    border-radius: 10px;
+}
+
+.cover p {
+    background-color: rgba(var(--primary), .3);
+    width: 60%;
+    position: relative;
+    top: 55%;
+    right: -42%;
+    padding: 5px;
+    border-left-style: solid;
+    border-radius: 10px;
 }
 
 .cover,
@@ -27,14 +47,51 @@
     height: 100%;
 }
 
+
+/****************************************************** Welocme section ***********************************************************************/
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(var(--primary), 1);
+    align-items: center;
+    margin-top: 5vw;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+#welcome h2 {
+    padding: 2vw;
+    border-bottom: .5vw double rgba(var(--text-primary), .8);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 70%;
+    margin-bottom: 2vw;
+}
+
+#welcome p {
+    margin: 5% 5% 5% 5%;
+}
+
+
+/****************************************************** Amenities section ***********************************************************************/
+
 #amenities-section {
-    margin-top: 10vw;
+    margin-top: 5vw;
     width: 100%;
     height: max-content;
     text-align: center;
     background-image: url(photos/outdoor_pic.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: var(--shadow);
+}
+
+.cover-amenities {
+    background-color: rgba(var(--primary), .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #amenities-section ul {

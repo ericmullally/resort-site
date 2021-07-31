@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\resort",
+    "\\resort\\static",
+    "\\resort\\static\\resort",
+    "\\resort\\static\\resort\\photos"
   ],
+  "SelectedNode": "\\credit.txt",
   "PreviewInSolutionExplorer": false
 }

@@ -82,8 +82,9 @@
     width: 100%;
     height: max-content;
     text-align: center;
-    background-image: url(photos/outdoor_pic.jpg);
+    background-image: url(photos/activities_bg.jpg);
     background-repeat: no-repeat;
+    background-size:cover;
     background-position: center;
     box-shadow: var(--shadow);
 }

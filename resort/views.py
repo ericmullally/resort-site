@@ -3,22 +3,22 @@ from django.shortcuts import render
 card_activities= [
     {
         "name":"Relaxing",
-        "img": "/room_shot.jpg", 
+        "img": "/room_shot.jpeg", 
         "url" : "rooms"
     },
     {
         "name":"Swimming",
-        "img": "/pool_shot.jpg", 
+        "img": "/pool_shot.jpeg", 
         "url" : "pool"
     },
     {
         "name":"Hiking",
-        "img": "/outdoor_pic.jpg", 
+        "img": "/outdoor_pic.jpeg", 
         "url" : "hicking"
     },
     {
         "name":"Surffing",
-        "img": "/ocean_shot.jpg", 
+        "img": "/ocean_shot.jpeg", 
         "url" : "surffing"
     }
     ]

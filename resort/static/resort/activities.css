@@ -1,0 +1,40 @@
+#container {
+    height: 80vh;
+}
+
+.main_layout {
+    background-color: rgba(var(--primary), 1);
+    margin-top: 2vw;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 5%;
+    padding: 5%;
+    justify-items: end;
+}
+
+.main_layout h1 {
+    width: 50%;
+}
+
+.main_layout h1::after {
+    content: "";
+    display: block;
+    border-left: 2vw solid transparent;
+    border-top: 10px double rgb(var(--text-primary));
+}
+
+.main_layout img {
+    max-width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+    .main_layout {
+        padding: 10%;
+    }
+    .main_layout img {
+        max-width: 70%;
+    }
+    .main_layout p {
+        font-size: 1.8vw;
+    }
+}

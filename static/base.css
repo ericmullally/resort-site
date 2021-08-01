@@ -1,6 +1,6 @@
 :root {
     --background-primary: 185, 185, 185;
-    --text-primary: 187, 172, 17;
+    --text-primary: 212, 155, 0;
     --text-secondary: 200, 200, 200;
     --primary: 0, 0, 0;
     --secondary: 3, 3, 131;
@@ -18,7 +18,10 @@ html {
 }
 
 body {
-    margin: 0 8vw 0 7vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 5vw;
     background-color: rgb(var(--background-primary));
 }
 
@@ -50,8 +53,8 @@ h3 {
 /****************************************************** Header section ***********************************************************************/
 
 #header {
-    margin-left: -8vw;
     position: sticky;
+    margin-left: -5vw;
     z-index: 10;
     top: 0;
     width: 100vw;
@@ -90,9 +93,10 @@ h3 {
 /****************************************************** Footer section ***********************************************************************/
 
 #footer {
-    position: absolute;
-    left: 0;
-    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-left: -5vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -150,7 +154,7 @@ h3 {
 @media screen and (max-width: 1200px) {
     #footer ul {
         flex-direction: row;
-        height: 15vw;
+        height: 5vw;
     }
     #header input {
         width: 30vw;

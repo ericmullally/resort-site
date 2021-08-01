@@ -8,7 +8,7 @@
     height: 80%;
     background-color: rgba(var(--primary), 1);
     overflow: hidden;
-    transition: all, .5s;
+    transition: all, ease, .5s;
     cursor: pointer;
 }
 
@@ -39,8 +39,8 @@
 
 .amenities-card p {
     color: rgba(var(--text-secondary), 1);
-    padding: 1vw;
-    font-size: 1vw;
+    padding: 1px 1vw 1px 1vw;
+    font-size: 95%;
 }
 
 .detail-btn {
@@ -54,6 +54,11 @@
     transform: translate(0, 120%);
     align-self: center;
     transition: all, ease, .5s;
+}
+
+.detail-btn:active {
+    transform: translate(0, -28%);
+    background-color: rgba(var(--secondary), .8);
 }
 
 .amenities-card:hover>.detail-btn {
@@ -73,10 +78,10 @@
         margin-top: -4.5vh;
     }
     .detail-btn {
-        transform: translate(0, -30%);
+        transform: none;
     }
     .amenities-card:hover>.detail-btn {
-        transform: translate(0, 0);
+        transform: none;
     }
 }
 

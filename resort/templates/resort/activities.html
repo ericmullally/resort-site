@@ -10,5 +10,11 @@ Activities
 {% endblock %}
 
 {% block body %}
-
+<section id="container">
+    <div class="main_layout" >
+        <img src="{% static "resort\photos"|add:card.img %}" />
+        <h1>{{card.name}}</h1>
+        <p>{{card.info}}</p>
+    </div>
+</section>
 {% endblock %}

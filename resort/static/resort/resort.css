@@ -1,4 +1,3 @@
-
 /****************************************************** Hero section ***********************************************************************/
 
 #hero {
@@ -84,7 +83,7 @@
     text-align: center;
     background-image: url(photos/activities_bg.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     box-shadow: var(--shadow);
 }
@@ -112,4 +111,16 @@
     background-color: rgba(var(--primary), 1);
     padding: 1vw;
     align-self: stretch;
+}
+
+
+/***************************************************Responsive section****************************************************/
+
+@media screen and (max-width: 1100px) {
+    #activities-section ul {
+        width: 64%;
+    }
+    #welcome p {
+        font-size: 1.5vw;
+    }
 }

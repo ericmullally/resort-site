@@ -1,6 +1,6 @@
 :root {
     --background-primary: 185, 185, 185;
-    --text-primary: 187, 172, 17;
+    --text-primary: 212, 155, 0;
     --text-secondary: 200, 200, 200;
     --primary: 0, 0, 0;
     --secondary: 3, 3, 131;
@@ -18,7 +18,10 @@ html {
 }
 
 body {
-    margin: 0 8vw 0 7vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 5vw;
     background-color: rgb(var(--background-primary));
 }
 
@@ -50,8 +53,8 @@ h3 {
 /****************************************************** Header section ***********************************************************************/
 
 #header {
-    margin-left: -8vw;
     position: sticky;
+    margin-left: -5vw;
     z-index: 10;
     top: 0;
     width: 100vw;
@@ -61,6 +64,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     box-shadow: var(--shadow);
+    overflow: hidden;
 }
 
 #header h1 {
@@ -89,15 +93,21 @@ h3 {
 /****************************************************** Footer section ***********************************************************************/
 
 #footer {
-    position: absolute;
-    left: 0;
-    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-left: -5vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     background-color: black;
     align-items: center;
     box-shadow: var(--shadow);
     margin-top: 5vw;
+    overflow: hidden;
+}
+
+#footer svg {
+    width: 13vw;
 }
 
 #footer ul {
@@ -107,13 +117,14 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 15vw;
+    width: 90%;
     height: 10vw;
     margin-bottom: 1vw;
 }
 
 #footer li {
     cursor: pointer;
+    font-size: 1.3vw;
     transition: all ease .5s;
 }
 
@@ -122,8 +133,8 @@ h3 {
 }
 
 #footer img {
-    width: 50px;
-    height: 50px;
+    width: 3vw;
+    height: 3vw;
     cursor: pointer;
     transition: all ease .5s;
 }
@@ -134,4 +145,29 @@ h3 {
 
 #footer div {
     margin: 2vw;
+    align-self: flex-start;
+}
+
+
+/********************************************************Responsive section********************************************************/
+
+@media screen and (max-width: 1200px) {
+    #footer ul {
+        flex-direction: row;
+        height: 5vw;
+    }
+    #header input {
+        width: 30vw;
+        margin-right: 5vw;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #header svg {
+        height: 7vw;
+        width: 30vw;
+    }
+    #footer svg {
+        width: 30vw;
+    }
 }

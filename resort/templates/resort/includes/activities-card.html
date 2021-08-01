@@ -3,7 +3,7 @@
 <div class="amenities-card">
   <img src="{% static "resort\photos"|add:activities.img %}" alt="alt place holder" />
   <h3>{{activities.name}} </h3>
-  <p>{% lorem 15 w random %}</p>
+  <p>{{activities.snippet}}</p>
   <button class="detail-btn"> <a href="{% url "activities" activities.url %}">Details</a> </button>
  
 </div>

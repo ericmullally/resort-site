@@ -1,0 +1,35 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block title %}
+    Booking
+{% endblock %}
+
+{% block css%}
+<link rel="stylesheet" href="{% static 'resort/booking.css'%}">
+{% endblock %}
+
+{% block body %}
+<section id="booking_layout">
+    <h2> *This form is for display only. do not enter your actual information. Hackers gonna hack.* </h2>
+    <form>
+        <label for="firstName"> First Name</label>
+        <input type="text" name="first name" id="firstName" />
+
+        <label for="lastName"> Last Name</label>
+        <input type="text" name="last name" id="lastName" />
+
+        <label for="birthday"> Birthday </label>
+        <input type="date" name="birthday" id="birthday" />
+
+        <label for="cardType"> Card Type </label>
+        <input type="text" name="card Type" id="cardType" />
+
+        <label for="ccn">Credit Card Number:</label>
+        <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+
+        <label for="dateBooking"> Dates </label>
+        <input type="date" name="date Booking" id="dateBooking" />
+    </form>
+</section>
+{% endblock %}

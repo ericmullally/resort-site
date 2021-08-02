@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\resort",
-    "\\resort\\static",
-    "\\resort\\static\\resort",
-    "\\resort\\static\\resort\\photos"
+    "\\resort_site"
   ],
+  "SelectedNode": "\\resort_site\\asgi.py",
   "PreviewInSolutionExplorer": false
 }

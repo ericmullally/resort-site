@@ -1,0 +1,44 @@
+#booking_layout {
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    color:red;
+   margin-top:12vh;
+}
+
+form {
+    display: grid;
+    grid-gap: 5px;
+    width: 50%;
+    padding: 3%;
+    background-color: rgb(var(--primary));
+    justify-items: center;
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+}
+
+input {
+    width: 50%;
+    height: 2vw;
+    background-color: rgba(255,255,255,.8);
+    border-radius: 6px;
+    transition: all ease .3s;
+    border-width:0;
+    transform-origin:center;
+}
+input:focus{
+    outline:none;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    border-bottom: 5px solid rgb(var(--text-primary));
+    
+}
+
+label{
+    color:white;
+}

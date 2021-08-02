@@ -65,7 +65,7 @@ def index(request):
     })
 
 def booking(request):
-    pass
+    return render(request, "resort/booking.html")
 
 def activities(request , slug):
     item = next(card for card in card_activities if card["url"] == slug)

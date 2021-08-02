@@ -71,6 +71,15 @@ h3 {
     color: rgba(var(--text-primary), 1);
 }
 
+#header h3{
+margin-right:-50%;
+}
+
+#header a {
+    text-decoration: none;
+    color: rgb(var(--text-primary));
+}
+
 #header input {
     min-height: 1.8vw;
     width: 15vw;
@@ -160,6 +169,10 @@ h3 {
         width: 30vw;
         margin-right: 5vw;
     }
+    #header h3 {
+        margin-right: 0;
+    }
+    
 }
 
 @media screen and (max-width:800px) {
@@ -169,5 +182,10 @@ h3 {
     }
     #footer svg {
         width: 30vw;
+    }
+    #header input {
+        width: 30vw;
+        height:10%;
+        margin-right: 5vw;
     }
 }
